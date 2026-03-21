@@ -1,0 +1,52 @@
+{
+  "rebalance_date": "2019-01-24",
+  "regime": {
+    "label": "mild_bull",
+    "score": 78,
+    "assessment": "Market above 200MA, VIX moderate, breadth recovering"
+  },
+  "universe_scan": {
+    "total_stocks": 100,
+    "qualifying_after_filters": 43,
+    "filters_applied": ["price > $10", "above 200-day MA", "sufficient history"]
+  },
+  "agent_evaluations": [
+    {
+      "action": "BUY",
+      "ticker": "ZS",
+      "agent_scores": {
+        "momentum_agent": {"score": 1.00, "evidence": "rank 1/43 (100th percentile), 3m momentum +62%"},
+        "trend_quality_agent": {"score": 0.73, "evidence": "above 150MA, 150>200MA, RS rank 67/100"},
+        "risk_agent": {"score": 0.10, "evidence": "realized vol 46.6% — HIGH, but momentum compensates"},
+        "regime_agent": {"score": 0.78, "evidence": "market score 78/100, mild bull regime"}
+      },
+      "pm_decision": {
+        "conviction": 0.743,
+        "threshold": 0.400,
+        "result": "APPROVED — conviction 0.743 > threshold 0.400",
+        "size_multiplier": 1.3,
+        "reasoning": "High conviction (>0.7) triggers 30% larger position size"
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "MRK",
+      "agent_scores": {
+        "momentum_agent": {"score": 0.0, "evidence": "dropped below top 10 ranking"},
+        "trend_quality_agent": {"score": 0.3, "evidence": "below 50-day MA"},
+        "risk_agent": {"score": 0.0, "evidence": "no active risk flag"},
+        "regime_agent": {"score": 0.0, "evidence": "no regime deterioration"}
+      },
+      "pm_decision": {
+        "sell_pressure": 0.046,
+        "result": "SOLD — dropped out of top 10 ranking zone",
+        "reasoning": "Stock fell below sell_threshold (rank >10), rotation to stronger names"
+      }
+    }
+  ],
+  "portfolio_after_rebalance": {
+    "positions": 5,
+    "top_holdings": ["ZS", "NFLX", "AMD", "AVGO", "NOW"],
+    "cash_pct": 2.3
+  }
+}
