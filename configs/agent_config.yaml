@@ -1,0 +1,57 @@
+# ============================================================
+# Agent Configuration — V1 Agent Roster
+# ============================================================
+
+agents:
+  data_ops:
+    enabled: true
+    class: "src.agents.data_ops_agent.DataOpsAgent"
+    allowed_inputs: ["raw_ohlcv", "fundamentals", "macro", "metadata"]
+    forbidden_inputs: ["agent_opinions", "trade_decisions", "portfolio_state"]
+    memory_max_entries: 500
+
+  technical:
+    enabled: true
+    class: "src.agents.technical_agent.TechnicalAgent"
+    allowed_inputs: ["ohlcv", "indicators", "volatility", "base_features", "breakout_features"]
+    forbidden_inputs: ["fundamentals", "news", "sentiment", "portfolio_pnl"]
+    memory_max_entries: 1000
+
+  regime:
+    enabled: true
+    class: "src.agents.regime_agent.RegimeAgent"
+    allowed_inputs: ["spy_data", "vix", "breadth", "rates"]
+    forbidden_inputs: ["stock_signals", "portfolio_positions", "individual_stock_data"]
+    memory_max_entries: 500
+
+  risk:
+    enabled: true
+    class: "src.agents.risk_agent.RiskAgent"
+    allowed_inputs: ["portfolio_state", "volatility", "correlation", "drawdown", "exposure"]
+    forbidden_inputs: ["fundamentals", "news", "sentiment"]
+    has_veto: true
+    memory_max_entries: 500
+
+  pm:
+    enabled: true
+    class: "src.agents.pm_agent.PMAgent"
+    allowed_inputs: ["agent_outputs", "portfolio_summary"]
+    forbidden_inputs: ["raw_ohlcv", "raw_features", "raw_indicators"]
+    min_agents_agree: 2
+    min_confidence: 0.5
+    memory_max_entries: 1000
+
+  review:
+    enabled: true
+    class: "src.agents.review_agent.ReviewAgent"
+    allowed_inputs: ["trade_log", "agent_log", "outcomes", "regime_context"]
+    forbidden_inputs: ["live_data", "current_signals", "current_prices"]
+    memory_max_entries: 500
+
+decision_flow:
+  - data_ops
+  - regime
+  - technical
+  - risk
+  - pm
+  # review runs post-trade, not in the live decision loop

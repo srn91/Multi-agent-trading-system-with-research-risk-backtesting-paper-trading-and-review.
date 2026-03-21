@@ -1,0 +1,619 @@
+[
+  {
+    "timestamp": "2026-03-20T00:06:49.818182",
+    "regime": {
+      "label": "choppy",
+      "score": 51.7
+    },
+    "signals": [
+      {
+        "ticker": "MRNA",
+        "price": 52.37,
+        "momentum": 0.8567260786373143,
+        "quality": 0.9863753271878912,
+        "vol": 0.7601504045812678,
+        "score": 0.8386473346656527,
+        "conviction": 0.742,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.989,
+          "risk": 0.1,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "AMAT",
+        "price": 357.21,
+        "momentum": 0.7408442421733212,
+        "quality": 0.9707203823830659,
+        "vol": 0.49656591929598887,
+        "score": 0.8309148152287023,
+        "conviction": 0.738,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.977,
+          "risk": 0.1,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "CAT",
+        "price": 688.65,
+        "momentum": 0.551449791967081,
+        "quality": 0.9650199157846819,
+        "vol": 0.3029658532465194,
+        "score": 0.766582893532212,
+        "conviction": 0.796,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.972,
+          "risk": 0.493,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "FDX",
+        "price": 356.11,
+        "momentum": 0.42170398855608143,
+        "quality": 0.98276431091385,
+        "vol": 0.23370832242806833,
+        "score": 0.7161359628267775,
+        "conviction": 0.826,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.986,
+          "risk": 0.666,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "LMT",
+        "price": 637.51,
+        "momentum": 0.3967219708305627,
+        "quality": 0.9833014680778422,
+        "vol": 0.24960141210195616,
+        "score": 0.6976271195934809,
+        "conviction": 0.82,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.987,
+          "risk": 0.626,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "JNJ",
+        "price": 237.6,
+        "momentum": 0.3273586781983507,
+        "quality": 0.9970683964948219,
+        "vol": 0.17304561948225608,
+        "score": 0.6827290489750762,
+        "conviction": 0.851,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.998,
+          "risk": 0.817,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "GOOGL",
+        "price": 307.13,
+        "momentum": 0.29664404236493114,
+        "quality": 0.8946204620462046,
+        "vol": 0.24047705908785214,
+        "score": 0.6007855816314125,
+        "conviction": 0.806,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.916,
+          "risk": 0.649,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-20T00:09:41.243031",
+    "regime": {
+      "label": "choppy",
+      "score": 51.7
+    },
+    "signals": [
+      {
+        "ticker": "MRNA",
+        "price": 52.37,
+        "momentum": 0.8567260786373143,
+        "quality": 0.9863753271878912,
+        "vol": 0.7601504045812678,
+        "score": 0.8386473346656527,
+        "conviction": 0.742,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.989,
+          "risk": 0.1,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "AMAT",
+        "price": 357.21,
+        "momentum": 0.7408442421733212,
+        "quality": 0.9707203823830659,
+        "vol": 0.49656591929598953,
+        "score": 0.830914815228702,
+        "conviction": 0.738,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.977,
+          "risk": 0.1,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "CAT",
+        "price": 688.65,
+        "momentum": 0.5514497435081362,
+        "quality": 0.9650199157846819,
+        "vol": 0.3029658532465194,
+        "score": 0.7665828650503864,
+        "conviction": 0.796,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.972,
+          "risk": 0.493,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "FDX",
+        "price": 356.11,
+        "momentum": 0.4217040262357313,
+        "quality": 0.98276431091385,
+        "vol": 0.2337083224280682,
+        "score": 0.7161359849730546,
+        "conviction": 0.826,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.986,
+          "risk": 0.666,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "LMT",
+        "price": 637.51,
+        "momentum": 0.3967219708305627,
+        "quality": 0.9833014680778422,
+        "vol": 0.24960141210195577,
+        "score": 0.697627119593481,
+        "conviction": 0.82,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.987,
+          "risk": 0.626,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "JNJ",
+        "price": 237.6,
+        "momentum": 0.3273586781983507,
+        "quality": 0.9970683964948219,
+        "vol": 0.17304561948225639,
+        "score": 0.6827290489750761,
+        "conviction": 0.851,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.998,
+          "risk": 0.817,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "GOOGL",
+        "price": 307.13,
+        "momentum": 0.29664404236493114,
+        "quality": 0.8946204620462046,
+        "vol": 0.24047705908785239,
+        "score": 0.6007855816314125,
+        "conviction": 0.806,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.916,
+          "risk": 0.649,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-20T00:18:04.658021",
+    "regime": {
+      "label": "choppy",
+      "score": 51.7
+    },
+    "signals": [
+      {
+        "ticker": "MRNA",
+        "price": 52.37,
+        "momentum": 0.8567260786373143,
+        "quality": 0.9863753271878912,
+        "vol": 0.7601504045812678,
+        "score": 0.8386473346656527,
+        "conviction": 0.742,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.989,
+          "risk": 0.1,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "AMAT",
+        "price": 357.21,
+        "momentum": 0.7408442421733212,
+        "quality": 0.9707203823830659,
+        "vol": 0.49656591929598876,
+        "score": 0.8309148152287023,
+        "conviction": 0.738,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.977,
+          "risk": 0.1,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "CAT",
+        "price": 688.65,
+        "momentum": 0.551449791967081,
+        "quality": 0.9650199157846819,
+        "vol": 0.3029658532465197,
+        "score": 0.7665828935322119,
+        "conviction": 0.796,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.972,
+          "risk": 0.493,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "FDX",
+        "price": 356.11,
+        "momentum": 0.42170398855608143,
+        "quality": 0.98276431091385,
+        "vol": 0.23370832242806852,
+        "score": 0.7161359628267774,
+        "conviction": 0.826,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.986,
+          "risk": 0.666,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "LMT",
+        "price": 637.51,
+        "momentum": 0.39672194696137475,
+        "quality": 0.9833014680778422,
+        "vol": 0.24960141210195594,
+        "score": 0.6976271055643259,
+        "conviction": 0.82,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.987,
+          "risk": 0.626,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "JNJ",
+        "price": 237.6,
+        "momentum": 0.3273586781983507,
+        "quality": 0.9970683964948219,
+        "vol": 0.17304561948225627,
+        "score": 0.6827290489750761,
+        "conviction": 0.851,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.998,
+          "risk": 0.817,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "GOOGL",
+        "price": 307.13,
+        "momentum": 0.29664404236493114,
+        "quality": 0.8946204620462046,
+        "vol": 0.24047705908785275,
+        "score": 0.6007855816314123,
+        "conviction": 0.806,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.916,
+          "risk": 0.649,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      }
+    ],
+    "account": {
+      "equity": 100000.0,
+      "buying_power": 112712.16,
+      "portfolio_value": 100000.0
+    },
+    "positions": []
+  },
+  {
+    "timestamp": "2026-03-20T00:20:49.085661",
+    "regime": {
+      "label": "choppy",
+      "score": 51.7
+    },
+    "signals": [
+      {
+        "ticker": "MRNA",
+        "price": 52.37,
+        "momentum": 0.8567260786373143,
+        "quality": 0.9863753271878912,
+        "vol": 0.7601504045812678,
+        "score": 0.8386473346656527,
+        "conviction": 0.742,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.989,
+          "risk": 0.1,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "AMAT",
+        "price": 357.21,
+        "momentum": 0.7408442421733212,
+        "quality": 0.9707203823830659,
+        "vol": 0.496565919295989,
+        "score": 0.8309148152287023,
+        "conviction": 0.738,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.977,
+          "risk": 0.1,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "CAT",
+        "price": 688.65,
+        "momentum": 0.551449791967081,
+        "quality": 0.9650199157846819,
+        "vol": 0.3029658532465193,
+        "score": 0.7665828935322121,
+        "conviction": 0.796,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.972,
+          "risk": 0.493,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "FDX",
+        "price": 356.11,
+        "momentum": 0.4217040262357313,
+        "quality": 0.98276431091385,
+        "vol": 0.23370832242806874,
+        "score": 0.7161359849730544,
+        "conviction": 0.826,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.986,
+          "risk": 0.666,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "LMT",
+        "price": 637.51,
+        "momentum": 0.3967219708305627,
+        "quality": 0.9833014680778422,
+        "vol": 0.24960141210195588,
+        "score": 0.6976271195934809,
+        "conviction": 0.82,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.987,
+          "risk": 0.626,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "JNJ",
+        "price": 237.6,
+        "momentum": 0.3273586781983507,
+        "quality": 0.9970683964948219,
+        "vol": 0.1730456194822565,
+        "score": 0.6827290489750761,
+        "conviction": 0.851,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.998,
+          "risk": 0.817,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "GOOGL",
+        "price": 307.13,
+        "momentum": 0.29664404236493114,
+        "quality": 0.8946204620462046,
+        "vol": 0.24047705908785177,
+        "score": 0.6007855816314126,
+        "conviction": 0.806,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.916,
+          "risk": 0.649,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-20T07:10:38.791119",
+    "regime": {
+      "label": "choppy",
+      "score": 51.7
+    },
+    "signals": [
+      {
+        "ticker": "MRNA",
+        "price": 52.37,
+        "momentum": 0.8567260786373143,
+        "quality": 0.9863753271878912,
+        "vol": 0.7601504045812678,
+        "score": 0.8386473346656527,
+        "conviction": 0.742,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.989,
+          "risk": 0.1,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "AMAT",
+        "price": 357.21,
+        "momentum": 0.7408441865956781,
+        "quality": 0.9707203823830659,
+        "vol": 0.4965659192959881,
+        "score": 0.83091478256285,
+        "conviction": 0.738,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.977,
+          "risk": 0.1,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "CAT",
+        "price": 688.65,
+        "momentum": 0.551449791967081,
+        "quality": 0.9650199157846819,
+        "vol": 0.3029658532465196,
+        "score": 0.7665828935322121,
+        "conviction": 0.796,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.972,
+          "risk": 0.493,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "FDX",
+        "price": 356.11,
+        "momentum": 0.4217040262357313,
+        "quality": 0.98276431091385,
+        "vol": 0.23370832242806786,
+        "score": 0.7161359849730548,
+        "conviction": 0.826,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.986,
+          "risk": 0.666,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "LMT",
+        "price": 637.51,
+        "momentum": 0.3967219708305627,
+        "quality": 0.9833014680778422,
+        "vol": 0.24960141210195583,
+        "score": 0.697627119593481,
+        "conviction": 0.82,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.987,
+          "risk": 0.626,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "JNJ",
+        "price": 237.6,
+        "momentum": 0.3273586781983507,
+        "quality": 0.9970683964948219,
+        "vol": 0.17304561948225647,
+        "score": 0.6827290489750762,
+        "conviction": 0.851,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.998,
+          "risk": 0.817,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      },
+      {
+        "ticker": "GOOGL",
+        "price": 307.13,
+        "momentum": 0.29664404236493114,
+        "quality": 0.8946204620462046,
+        "vol": 0.24047705908785283,
+        "score": 0.6007855816314124,
+        "conviction": 0.806,
+        "agent_scores": {
+          "momentum": 1.0,
+          "trend": 0.916,
+          "risk": 0.649,
+          "regime": 0.517
+        },
+        "signal": "STRONG BUY"
+      }
+    ],
+    "account": {
+      "equity": 100000.0,
+      "buying_power": 113057.96,
+      "portfolio_value": 100000.0
+    },
+    "positions": []
+  }
+]

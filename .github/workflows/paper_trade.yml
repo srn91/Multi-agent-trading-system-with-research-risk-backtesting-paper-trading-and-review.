@@ -1,0 +1,27 @@
+name: Daily Paper Trading
+on:
+  schedule:
+    - cron: '0 14 * * 1-5'
+  workflow_dispatch:
+jobs:
+  trade:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: |
+          pip install --upgrade pip setuptools wheel
+          pip install pyarrow pandas numpy yfinance alpaca-trade-api pyyaml
+      - name: Run paper trading
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          ALPACA_BASE_URL: https://paper-api.alpaca.markets
+        run: python paper_trade.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: trade-log-${{ github.run_number }}
+          path: reports/paper_trading/paper_trade_log.json
+          retention-days: 90

@@ -1,0 +1,65 @@
+# ============================================================
+# Strategy Configuration — Breakout Trend System v1
+# ============================================================
+
+strategy:
+  name: "breakout_trend_v1"
+  description: "Long-only breakout from volatility compression with trend filter"
+  version: "1.0.0"
+
+universe:
+  market: "US"
+  min_price: 10.0
+  min_avg_dollar_volume: 5_000_000
+  max_tickers: 100
+
+capital:
+  initial: 100000
+  risk_per_trade: 0.01  # 1%
+  max_positions: 10
+  max_position_pct: 0.20  # 20% of equity
+
+trend_filter:
+  ma_fast: 150
+  ma_slow: 200
+  ma_slope_lookback: 20
+  require_above_52w_mid: true
+
+base_detection:
+  min_length: 15
+  max_length: 40
+  max_depth_pct: 0.12
+  require_atr_compression: true
+
+breakout:
+  lookback: 20
+  min_volume_ratio: 1.5
+  min_close_range_pct: 0.25
+
+entry:
+  type: "next_day_open"
+
+stop_loss:
+  method: "base_low_atr"
+  atr_multiplier: 0.5
+  max_stop_pct: 0.08
+
+exits:
+  failed_breakout_days: 5
+  trailing_stop_lookback: 10
+  max_hold_days: 60
+
+regime:
+  index: "SPY"
+  ma_period: 200
+  require_above: true
+
+execution:
+  slippage_pct: 0.0005
+  commission_per_share: 0.005
+
+backtest:
+  in_sample_start: "2012-01-01"
+  in_sample_end: "2020-12-31"
+  out_of_sample_start: "2021-01-01"
+  out_of_sample_end: "2025-12-31"

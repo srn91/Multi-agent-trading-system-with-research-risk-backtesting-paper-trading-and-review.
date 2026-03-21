@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+
+# Data (don't commit raw market data)
+data/raw/
+data/processed/
+*.parquet
+*.h5
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Reports (generated, can be large)
+reports/backtests/*.csv
+reports/paper_trading/*.csv
+
+# Memory (runtime state, not source)
+memory/agent_memories/*.json
+memory/trade_journal/*.json
+memory/regime_memory/*.json
+memory/ticker_memory/*.json
+state/session_state.json
+
+# Secrets
+.env
+*.key
+*.pem
+.env.local
+
+# Jupyter
+.ipynb_checkpoints/

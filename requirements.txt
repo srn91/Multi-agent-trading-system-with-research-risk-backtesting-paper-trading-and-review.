@@ -1,0 +1,30 @@
+# Core
+pandas>=2.0
+numpy>=1.24
+yfinance>=0.2.30
+
+# Config
+pyyaml>=6.0
+
+# Data storage
+pyarrow>=14.0
+fastparquet>=2023.10
+
+# Visualization
+matplotlib>=3.7
+seaborn>=0.12
+plotly>=5.15
+
+# Dashboard
+streamlit>=1.30
+
+# Paper Trading
+alpaca-trade-api>=3.0
+
+# Testing
+pytest>=7.0
+pytest-cov>=4.0
+
+# Utilities
+tqdm>=4.65
+python-dateutil>=2.8

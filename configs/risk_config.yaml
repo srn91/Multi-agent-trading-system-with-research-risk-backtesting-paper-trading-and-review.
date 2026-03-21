@@ -1,0 +1,26 @@
+# ============================================================
+# Risk Configuration
+# ============================================================
+
+portfolio_limits:
+  max_drawdown_pct: -0.15
+  max_single_position_pct: 0.20
+  max_sector_pct: 0.40
+  max_correlation_overlap: 0.80
+  max_positions: 10
+
+position_sizing:
+  method: "fixed_fractional"
+  risk_per_trade: 0.01
+  max_risk_per_trade: 0.02
+
+kill_switch:
+  enabled: true
+  drawdown_threshold: -0.20
+  action: "close_all_and_halt"
+  cooldown_days: 10
+
+volatility_scaling:
+  enabled: false  # Phase 2
+  target_portfolio_vol: 0.10
+  vol_lookback: 20

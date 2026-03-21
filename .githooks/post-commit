@@ -1,0 +1,26 @@
+#!/bin/bash
+# Post-commit hook — automatically appends commit info to project_memory.md
+# Install: cp .githooks/post-commit .git/hooks/post-commit && chmod +x .git/hooks/post-commit
+
+MEMORY_FILE="project_memory.md"
+TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
+COMMIT_HASH=$(git rev-parse --short HEAD)
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
+COMMIT_MSG=$(git log -1 --pretty=%B)
+CHANGED_FILES=$(git diff-tree --no-commit-id --name-only -r HEAD | head -20)
+
+cat >> "$MEMORY_FILE" << EOF
+
+---
+
+## ${TIMESTAMP}
+- Commit: ${COMMIT_HASH}
+- Branch: ${BRANCH}
+- Message: ${COMMIT_MSG}
+### Changed Files
+$(echo "$CHANGED_FILES" | sed 's/^/- /')
+
+EOF
+
+# Auto-stage the updated memory file
+git add "$MEMORY_FILE" 2>/dev/null
